@@ -1,0 +1,28 @@
+.subheader a {
+  display: inline-block;
+  padding: 10px;
+  background: #859;
+  &:hover {
+    cursor: pointer;
+    background: #859;
+    border-bottom: 4px solid #637;
+    text-shadow: 2px 2px 2px #111;
+  }
+}
+
+
+.help-box button {
+  font-size: 1.5rem;
+  background: #478;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  padding: 10px 50px;
+}
+
+.help-box button:hover {
+  cursor: pointer;
+  background: #859;
+  border-bottom: 4px solid #637;
+  text-shadow: 2px 2px 2px #111;
+}

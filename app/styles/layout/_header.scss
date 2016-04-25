@@ -1,0 +1,17 @@
+header {
+  background: $blue-theme;
+  text-align: center;
+  #title {
+    color: $light-text;
+    margin: 0;
+    padding: 1rem 0;
+    font-family: sans-serif;
+    font-weight: 200;
+  }
+}
+
+.subheader {
+  text-align: right;
+  background: $darkblue;
+  padding: 0;
+}

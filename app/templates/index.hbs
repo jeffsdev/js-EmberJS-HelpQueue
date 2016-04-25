@@ -1,7 +1,11 @@
-<h1>User</h1>
-{{#link-to 'teacher'}}Teacher page{{/link-to}}
 
-
+<div class="subheader">
+  {{#link-to 'teacher'}}Teacher Portal{{/link-to}}
+</div>
+<div class="current-page">
+  <h2>Student</h2>
+  <h3>Ask For Help!</h3>
+</div>
 <div class="help-box">
   {{new-ticket ticket=ticket saveTicket="saveTicket" destroyTicket="destroyTicket"}}
 </div>

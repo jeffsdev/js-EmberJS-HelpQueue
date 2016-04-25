@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: $bg-grey;
+}
+
+a {
+  text-decoration: none;
+  color: $light-text;
+}
