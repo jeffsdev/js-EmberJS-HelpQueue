@@ -1,6 +1,48 @@
+.inputstyles {
+  width: 100%;
+  border-radius: 5px;
+  font-size: 1rem;
+  padding: 6px 12px;
+}
+
 .help-box {
-  width: 50%;
-  margin: auto;
+  width: 90%;
+  margin: 50px auto;
   text-align: center;
-  font-size: 2em;
+  font-size: 1.7rem;
+  p {
+    margin: 0;
+  }
+  .helpcoming {
+    font-size: 1.7rem;
+  }
+}
+
+.prereq {
+  height: 200px;
+  @media screen and(min-width: $largescreen) {
+    height: 100px;
+  }
+}
+
+.ticket-form {
+
+  form {
+
+    input {
+      @extend .inputstyles;
+      border: 1px solid #aaa;
+      margin: 0;
+      margin-bottom: 10px;
+    }
+    textarea {
+      width: 100%;
+      border-radius: 5px;
+      font-size: 1rem;
+      padding: 6px 12px;
+      min-height: 100px;
+      margin: 5px 0 20px 0;
+      font-family: sans-serif;
+    }
+  }
 }

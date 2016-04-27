@@ -1,29 +1,31 @@
 {{#if isQ1showing}}
-    <p>Have you gone through all the steps on the Learn
-      How to Program debugging lesson?</p>
-    <button {{action 'questionShow'}}>Yes</button>
+    <div class="prereq">
+      <p>Have you gone through all the steps on the Learn How to Program debugging lesson?</p>
+    </div>
+    <button {{action 'questionShow'}}>Yes...</button>
   {{else if isQ2showing}}
-    <p>have you asked another pair.....</p>
+    <div class="prereq">
+      <p>Have you asked another pair for help?</p>
+    </div>
     <button {{action 'question2Show'}}>Yes...</button>
   {{else if isQ3showing}}
-    <p>have you spent 15min.....</p>
+    <div class="prereq">
+      <p>Have you spent 15 minutes going through through the problem documenting every step?</p>
+    </div>
     <button {{action 'question3Show'}}>Yes...</button>
   {{else if isFormShowing}}
-    <div>
+    <div class="ticket-form">
       <form>
         <div class="form-group">
-          <label for="name">Names</label>
-          {{input value=name id="name"}}
+          {{input value=name id="name" placeholder="Please enter your name"}}
         </div>
 
         <div class="form-group">
-          <label for="location">Location</label>
-          {{input value=location id="location"}}
+          {{input value=location id="location" placeholder="Please enter your location"}}
         </div>
 
         <div class="form-group">
-          <label for="description">Description</label>
-          {{input value=description id="description"}}
+          {{textarea value=description id="description" placeholder="Give a brief description of the issue you are having."}}
         </div>
 
         <button class="btn btn-default" {{action 'saveTicket'}}>Help!</button>

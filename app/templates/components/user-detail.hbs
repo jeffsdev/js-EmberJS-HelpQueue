@@ -1,9 +1,13 @@
 
 
 {{#if isDeleteShowing}}
-    <h2>Help is on the way! No need to worry. We are here to help! </h2>
-    <button {{action 'delete' ticket}}>Oh, wait....nevermind..I figured it out </button>
+    <div class="prereq">
+      <h2 class="helpcoming">Help is on the way! No need to worry. We are here to help! </h2>
+    </div>    
+    <button class="nevermind" {{action 'delete' ticket}}>Oh, wait... nevermind... <br> I figured it out </button>
   {{else if isClosedShowing}}
-    <p>Your ticket has been closed.</p>
-    {{#link-to 'index'}}Back to the back of the Queue{{/link-to}}
+    <div class="prereq">
+      <p>Your ticket has been closed.</p>
+    </div>
+    <button class="backhome">{{#link-to 'index'}}Ask For Help Again!{{/link-to}}</button>
 {{/if}}
