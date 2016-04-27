@@ -1,11 +1,11 @@
 <div class="subheader">
   <h2>Help Students Out!</h2>
-  {{#link-to 'index'}}Student Page{{/link-to}}
+  {{#link-to 'index'}}Student Portal{{/link-to}}
 </div>
-
-<ul>
-  {{#each model as |ticket|}}
-    {{ticket-tile ticket=ticket saveTicket="saveTicket" destroyTicket="destroyTicket"}}
-    {{moment-from-now ticket.timestamp interval=1000}}
-  {{/each}}
-</ul>
+<div class="queue-box">
+  <ul>
+    {{#each model as |ticket|}}
+      {{ticket-tile ticket=ticket saveTicket="saveTicket" destroyTicket="destroyTicket"}}
+    {{/each}}
+  </ul>
+</div>

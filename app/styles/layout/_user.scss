@@ -10,6 +10,7 @@
   margin: 50px auto;
   text-align: center;
   font-size: 1.7rem;
+  max-width: 768px;
   p {
     margin: 0;
   }
@@ -20,7 +21,7 @@
 
 .prereq {
   height: 200px;
-  @media screen and(min-width: $largescreen) {
+  @media screen and(min-width: $medscreen) {
     height: 100px;
   }
 }
@@ -31,7 +32,7 @@
 
     input {
       @extend .inputstyles;
-      border: 1px solid #aaa;
+      border: 1px solid $lightgrey;
       margin: 0;
       margin-bottom: 10px;
     }

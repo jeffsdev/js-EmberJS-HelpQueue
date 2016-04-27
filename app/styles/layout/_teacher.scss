@@ -1,0 +1,38 @@
+.queue-box {
+  width: 90%;
+  max-width: 768px;
+  margin: 50px auto;
+  text-align: center;
+  font-size: 1.7rem;
+  ul {
+    list-style: none;
+    padding: 0;
+    li {
+      background: $greywhite;
+      padding: 20px;
+      min-height: 120px;
+      margin: 20px 0;
+      p {
+        margin: 0;
+        &:first-child {
+          margin-bottom: 10px;
+        }
+      }
+      .question {
+        font-size: 1rem;
+        margin: 10px;
+        background: $offwhite;
+        padding: 10px;
+        cursor: pointer;
+        @media screen and(min-width: $largescreen) {
+          max-width: 75%;
+          margin: auto;
+        }
+      }
+      .time-elapsed {
+        background: $lightgrey;
+        margin: 20px 0 0 0;
+      }
+    }
+  }
+}
