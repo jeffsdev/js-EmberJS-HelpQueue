@@ -27,9 +27,7 @@
 }
 
 .ticket-form {
-
   form {
-
     input {
       @extend .inputstyles;
       border: 1px solid $lightgrey;
