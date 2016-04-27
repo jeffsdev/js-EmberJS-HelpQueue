@@ -1,7 +1,14 @@
-# Help-queue
+# Ember2 - Help Queue
+##### April 2016
+##### By Jeff Seymour, Mao Thygesen, Cassie Culkins
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+## Description
+##### A simple Help Queue web app, like the student help queue at Epicodus.  
+##### Allows a user to enter their name, computer location, and their question, which all get saved to a database. A user can then wait for help to arrive, or close the ticket if they've figured out the answer to their problem.   
+##### From the teacher portal page, a user can view a list of students that need help, their location, question description, time elapsed, and can delete tickets from the queue.
+
+## Technologies Used
+Ember 2, JavaScript, Moment.js, Bower, HTML, SCSS, Firebase
 
 ## Prerequisites
 
@@ -39,15 +46,7 @@ Make use of the many generators for code, try `ember help generate` for more det
 * `ember build` (development)
 * `ember build --environment production` (production)
 
-### Deploying
+## License
+Copyright (c) 2016 Jeff Seymour
 
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
-
-* [ember.js](http://emberjs.com/)
-* [ember-cli](http://www.ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-
+This software is licensed under the MIT license.
